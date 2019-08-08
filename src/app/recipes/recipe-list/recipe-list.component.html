@@ -6,8 +6,8 @@
 <hr>
 <div class="row">
     <div class="col xs-12">
-        <app-recipe-item *ngFor="let recipseEl of recipes"
+        <app-recipe-item *ngFor="let recipseEl of recipes; let i = index"
         [recipe]="recipseEl"
-        (recipeSelected)="onRecipeSelected(recipseEl)"></app-recipe-item>
+        [index] ="i"></app-recipe-item>
     </div>
 </div>
